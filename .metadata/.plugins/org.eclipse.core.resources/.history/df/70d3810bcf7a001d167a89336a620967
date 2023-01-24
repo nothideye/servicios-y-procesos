@@ -1,0 +1,35 @@
+package segundoejercicio;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+	
+	static Compartido c = new Compartido();
+	private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Indica cuantos numeros tendra el array");
+		int tamanyoArray;
+		tamanyoArray = Integer.parseInt(br.readLine());
+		
+		HiloProvedor h1 = new HiloProvedor(c);
+		HiloConsumidor h2 = new HiloConsumidor(c);
+		
+		h1.start();
+		h2.start();
+		
+		while(h1.isAlive() || h2.isAlive()) {
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	
+
+	}
+
+}

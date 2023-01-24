@@ -1,0 +1,17 @@
+package segundoejercicio;
+
+public class HiloProvedor extends Thread {
+	
+	private Compartido c;
+
+	public HiloProvedor(Compartido c) {
+		super();
+		this.c = c;
+	}
+	
+	
+	public HiloProvedor() {
+		
+	}
+
+}

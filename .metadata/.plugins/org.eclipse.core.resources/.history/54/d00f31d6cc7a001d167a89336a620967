@@ -1,0 +1,77 @@
+package segundoejercicio;
+
+import java.io.File;
+import java.io.IOException;
+
+public class HiloConsumidor extends Thread {
+	
+	static String path = "ruta.txt";
+	private Compartido c;
+	private File f = new File(path);
+	
+	
+	
+	public HiloConsumidor(String path, Compartido c, File f) {
+		super();
+		this.path = path;
+		this.c = c;
+		this.f = f;
+	}
+	
+	public HiloConsumidor() {
+		
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	public Compartido getC() {
+		return c;
+	}
+
+	public void setC(Compartido c) {
+		this.c = c;
+	}
+
+	public File getF() {
+		return f;
+	}
+
+	public void setF(File f) {
+		this.f = f;
+	}
+	
+	
+	public void run() {
+		
+	}
+	
+	
+	public static File comprobarArchivoExiste() {		
+		/*
+		 * comprueba si existe el archivo, si sí, lo elimina
+		 */
+		File checkAlmacen = new File(path);
+		if(checkAlmacen.exists()) {
+			checkAlmacen.delete();
+		}
+
+		/*
+		 * crea el nuevo archivo
+		 */
+		checkAlmacen = new File(path);
+		try {
+			checkAlmacen.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return checkAlmacen;
+	}
+
+}

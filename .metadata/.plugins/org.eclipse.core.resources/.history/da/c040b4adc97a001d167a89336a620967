@@ -1,0 +1,40 @@
+package primerejercicio;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+public class Main {
+	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	private static int tamanyoArray;
+	private static int rondas;
+	private int [] arrays;
+	public static boolean flag;
+	
+
+	public static void main(String[] args) {
+
+		
+		System.out.println("Indica el tamaño de la array");
+		try {
+			tamanyoArray = Integer.parseInt(br.readLine());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("Cuantas rondas quieres que existan?");
+		try {
+			rondas = Integer.parseInt(br.readLine());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+
+	}
+
+}

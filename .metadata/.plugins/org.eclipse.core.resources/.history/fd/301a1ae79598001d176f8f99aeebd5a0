@@ -1,0 +1,43 @@
+package main;
+
+public class Edificio {
+
+	 private int numPisos;
+	    private Persona[] personas;
+	    private Ascensor ascensor;
+
+	    public Edificio(int numPisos, int numPersonas) {
+	        this.numPisos = numPisos;
+	        personas = new Persona[numPersonas];
+	        for (int i = 0; i < numPersonas; i++) {
+	            personas[i] = new Persona(i, this);
+	            personas[i].start();
+	        }
+	        ascensor = new Ascensor(this);
+	        ascensor.start();
+	    }
+
+	    public int getNumPisos() {
+	        return numPisos;
+	    }
+
+	    public synchronized void llamaAscensor(Persona persona) {
+	        notifyAll();
+	    }
+
+	    public synchronized Persona entraAscensor(Ascensor ascensor) {
+	        while (ascensor.getPlantaActual() != 0) {
+	            try {
+	                wait();
+	            } catch (InterruptedException e) {
+	                e.printStackTrace();
+	            }
+	        }
+	        for (int i = 0; i < personas.length; i++) {
+	            if (!personas[i].isAlive()) {
+	                return personas[i];
+	            }
+	        }
+	        return null;
+	    }
+}

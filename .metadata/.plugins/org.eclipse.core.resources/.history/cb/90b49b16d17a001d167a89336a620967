@@ -1,0 +1,67 @@
+package segundoejercicio;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Main {
+	
+	static Compartido c = new Compartido();
+	static  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	public static void main(String[] args) {
+		int tamanyoArrayy = 0;
+		
+		System.out.println("Indica cuantos numeros tendra el array");
+	
+		try {
+			tamanyoArrayy = tamanyoArrayy = Integer.parseInt(br.readLine());
+		} catch (NumberFormatException e1) {
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		
+		c.setTamanyoArray(tamanyoArrayy);
+		
+		
+		System.out.println("indica cuantos numeros aleatorios quieres general");
+		int numerosAleatorios = 0;
+		try {
+			numerosAleatorios = Integer.parseInt(br.readLine());
+		} catch (NumberFormatException e1) {
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		
+		c.setNumerosRandom(numerosAleatorios);
+		
+		
+		System.out.println("indica una ruta para que se guarde el archivo");
+		String ruta = "";
+		try {
+			ruta = br.readLine();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		c.setRuta(ruta);
+		
+		HiloProvedor h1 = new HiloProvedor(c);
+		HiloConsumidor h2 = new HiloConsumidor(c);
+		
+		h1.start();
+		h2.start();
+		
+		while(h1.isAlive() || h2.isAlive()) {
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	
+
+	}
+
+}

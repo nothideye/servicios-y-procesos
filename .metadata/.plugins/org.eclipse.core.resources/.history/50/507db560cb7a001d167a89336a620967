@@ -1,0 +1,10 @@
+package segundoejercicio;
+
+import java.util.ArrayList;
+
+public class Compartido{
+	
+	private ArrayList<Integer> listaNumeros = new ArrayList<Integer>();
+	
+
+}

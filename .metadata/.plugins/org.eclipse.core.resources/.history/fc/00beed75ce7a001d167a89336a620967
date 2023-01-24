@@ -1,0 +1,29 @@
+package segundoejercicio;
+
+import java.util.ArrayList;
+
+public class Compartido{
+	
+	private ArrayList<Integer> listaNumeros = new ArrayList<Integer>();
+	private boolean terminar = false;
+	private int tamanyoArray = 0;
+	
+	public Compartido() {
+		
+	}
+	
+	public Compartido(ArrayList<Integer> listaNumeros, boolean terminar, int tamanyoArray) {
+		super();
+		this.listaNumeros = listaNumeros;
+		this.terminar = terminar;
+		this.tamanyoArray = tamanyoArray;
+	}
+	
+	
+	
+	
+
+	
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;compartidos&apos; to &apos;datosCompartidos&apos;&#x0D;&#x0A;- Original project: &apos;22-09&apos;&#x0D;&#x0A;- Original element: &apos;22-09/src/compartidos&apos;&#x0D;&#x0A;- Renamed element: &apos;22-09/src/datosCompartidos&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;compartidos&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;compartidos" name="datosCompartidos" qualified="false" references="true" stamp="1663833987780" textual="false" version="1.0"/>
+</session>

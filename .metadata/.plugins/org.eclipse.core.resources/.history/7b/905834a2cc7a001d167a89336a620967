@@ -1,0 +1,26 @@
+package segundoejercicio;
+
+import java.io.File;
+
+public class HiloConsumidor extends Thread {
+	
+	private String path = "ruta.txt";
+	private Compartido c;
+	private File f = new File(path);
+	
+	
+	
+	public HiloConsumidor(String path, Compartido c, File f) {
+		super();
+		this.path = path;
+		this.c = c;
+		this.f = f;
+	}
+	
+	public HiloConsumidor() {
+		
+	}
+	
+	
+
+}

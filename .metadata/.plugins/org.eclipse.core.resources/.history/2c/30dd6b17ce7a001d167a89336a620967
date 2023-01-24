@@ -1,0 +1,16 @@
+package segundoejercicio;
+
+public class Main {
+	
+	static Compartido c = new Compartido();
+
+	public static void main(String[] args) {
+		
+		HiloProvedor h1 = new HiloProvedor(c);
+		HiloConsumidor h2 = new HiloConsumidor(c);
+		
+	
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package segundoejercicio;
+
+import java.util.ArrayList;
+
+public class Compartido{
+	
+	private ArrayList<Integer> listaNumeros = new ArrayList<Integer>();
+	private boolean terminar = false;
+	
+	public Compartido() {
+		
+	}
+	public Compartido(ArrayList<Integer> listaNumeros, boolean terminar) {
+		super();
+		this.listaNumeros = listaNumeros;
+		this.terminar = terminar;
+	}
+	
+	
+	
+
+}

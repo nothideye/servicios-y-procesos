@@ -1,0 +1,53 @@
+package segundoejercicio;
+
+import java.util.ArrayList;
+
+public class Compartido{
+	
+	private ArrayList<Integer> listaNumeros = new ArrayList<Integer>(tamanyoArray);
+	private boolean terminar = false;
+	private int tamanyoArray;
+	
+	public Compartido() {
+		
+	}
+	
+	public Compartido(ArrayList<Integer> listaNumeros, boolean terminar, int tamanyoArray) {
+		super();
+		this.listaNumeros = listaNumeros;
+		this.terminar = terminar;
+		this.tamanyoArray = tamanyoArray;
+	}
+
+	public ArrayList<Integer> getListaNumeros() {
+		return listaNumeros;
+	}
+
+	public void setListaNumeros(ArrayList<Integer> listaNumeros) {
+		this.listaNumeros = listaNumeros;
+	}
+
+	public boolean isTerminar() {
+		return terminar;
+	}
+
+	public void setTerminar(boolean terminar) {
+		this.terminar = terminar;
+	}
+
+	public int getTamanyoArray() {
+		return tamanyoArray;
+	}
+
+	public void setTamanyoArray(int tamanyoArray) {
+		this.tamanyoArray = tamanyoArray;
+	}
+	
+	
+	
+	
+
+	
+	
+
+}

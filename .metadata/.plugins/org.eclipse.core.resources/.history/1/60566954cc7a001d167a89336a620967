@@ -1,0 +1,43 @@
+package segundoejercicio;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Random;
+
+public class HiloProvedor extends Thread {
+	Random r = new Random();
+	private int = numeroAleatorio;
+	
+	private Compartido c;
+
+	public HiloProvedor(Compartido c) {
+		super();
+		this.c = c;
+	}
+	
+	
+	public HiloProvedor() {
+		
+	}
+
+
+	public Compartido getC() {
+		return c;
+	}
+
+
+	public void setC(Compartido c) {
+		this.c = c;
+	}
+	
+	public void run() {
+		int numeroAleatorio;
+		numeroAleatorio = r.nextInt(0,9);
+		
+		c.getListaNumeros().add(numeroAleatorio);
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+	}
+
+}

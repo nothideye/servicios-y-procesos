@@ -1,0 +1,91 @@
+package segundoejercicio;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Random;
+
+public class HiloProvedor extends Thread {
+	
+	Random r = new Random();
+	private Compartido c;
+
+	public HiloProvedor(Compartido c) {
+		super();
+		this.c = c;
+	}
+	
+	
+	public HiloProvedor() {
+		
+	}
+
+
+	public Compartido getC() {
+		return c;
+	}
+
+
+	public void setC(Compartido c) {
+		this.c = c;
+	}
+	
+	public void run() {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int numeroAleatorio;
+		
+		while(!c.isTerminar()) {
+			
+			int tamanyoArrayy;
+			
+			System.out.println("Indica cuantos numeros tendra el array");
+		
+			try {
+				tamanyoArrayy = tamanyoArrayy = Integer.parseInt(br.readLine());
+				c.setTamanyoArray(tamanyoArrayy);
+			} catch (NumberFormatException e1) {
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			
+			
+			
+			
+			System.out.println("indica cuantos numeros aleatorios quieres general");
+			int numerosAleatorios = 0;
+			try {
+				numerosAleatorios = Integer.parseInt(br.readLine());
+				c.setNumerosRandom(numerosAleatorios);
+			} catch (NumberFormatException e1) {
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			
+			
+			
+			
+			System.out.println("indica una ruta para que se guarde el archivo");
+			String ruta = "";
+			try {
+				ruta = br.readLine();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			
+			
+			c.setRuta(ruta);	
+			
+		
+		numeroAleatorio = r.nextInt(0,9);
+		
+		c.getListaNumeros().add(numeroAleatorio);
+		
+		
+		}
+		
+	}
+
+}

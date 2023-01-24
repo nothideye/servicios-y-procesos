@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="clase_thread.Hilo"/>
+    <fullyQualifiedTypeName name="hilos.HiloProveedor"/>
+    <fullyQualifiedTypeName name="compartidos.ArraysCompartidos"/>
+    <fullyQualifiedTypeName name="hilos.Hilo2"/>
+    <fullyQualifiedTypeName name="datosCompartidos.DatosCompartidos"/>
+    <fullyQualifiedTypeName name="hilos.Hilo1"/>
+    <fullyQualifiedTypeName name="hilos.HiloProcesador"/>
+    <fullyQualifiedTypeName name="hilos.HiloSuma"/>
+    <fullyQualifiedTypeName name="hilos.HiloMenor"/>
+    <fullyQualifiedTypeName name="hilos.HilosParesImpares"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="compartido.Compartido"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="hilos.HiloLector"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="main.Main"/>
+    <fullyQualifiedTypeName name="hilo.HiloCorredor"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="produccion.Productor"/>
+    <fullyQualifiedTypeName name="produccion.Consumidor"/>
+    <fullyQualifiedTypeName name="hilos.HiloUno"/>
+    <fullyQualifiedTypeName name="compartido.StringCompartido"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="banco.Sucursal"/>
+    <fullyQualifiedTypeName name="banco.Cuenta"/>
+    <fullyQualifiedTypeName name="usuarios.Usuario"/>
+    <fullyQualifiedTypeName name="compartidos.Caja"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="compartidos.Producto"/>
+    <fullyQualifiedTypeName name="hilos.Cliente"/>
+    <fullyQualifiedTypeName name="hilos.Dependiente"/>
+</qualifiedTypeNameHistroy>

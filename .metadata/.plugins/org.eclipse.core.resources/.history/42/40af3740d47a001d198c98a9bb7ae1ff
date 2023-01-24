@@ -1,0 +1,48 @@
+package primerejercicio;
+
+public class Hilo extends Thread {
+	private int [] arrays;
+	private int suma;
+	
+	
+	public Hilo() {
+		
+	}
+	
+	public Hilo(int[] arrays, int suma) {
+		super();
+		this.arrays = arrays;
+		this.suma = suma;
+	}
+
+
+	public int[] getArrays() {
+		return arrays;
+	}
+
+
+	public void setArrays(int[] arrays) {
+		this.arrays = arrays;
+	}
+
+
+	public int getSuma() {
+		return suma;
+	}
+
+
+	public void setSuma(int suma) {
+		this.suma = suma;
+	}
+	
+	
+	public void run() {
+		
+		for (int i = 0; i < arrays.length; i++) {
+			suma = arrays[i];
+		}
+		
+	}
+	
+	
+}
